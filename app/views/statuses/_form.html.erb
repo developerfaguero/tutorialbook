@@ -10,16 +10,27 @@
       </ul>
     </div>
   <% end %>
+  <div class="row">
+    <div class="col-sm-4">      
+    </div>
+    <div class="col-sm-4">
+      <div class="form-group">
+        <%= f.label :nombre %>
+        <%= f.text_field :nombre , class:"form-control"%>
+      </div>
+      <div class="form-group">
+        <%= f.label :contenido %>
+        <%= f.text_area :contenido , class:"form-control" , style:"resize:none;height:50px"%>
+      </div>
+      <div class="text-right">
+        <br/>
+        <%= f.submit 'Guardar', :class => 'btn btn-primary'%>
+      </div>
 
-  <div class="field">
-    <%= f.label :nombre %><br />
-    <%= f.text_field :nombre %>
+    </div>
+    <div class="col-sm-4">      
+    </div>
   </div>
-  <div class="field">
-    <%= f.label :contenido %><br />
-    <%= f.text_area :contenido %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+  
+  
 <% end %>

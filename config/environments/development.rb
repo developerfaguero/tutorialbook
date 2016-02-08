@@ -34,4 +34,7 @@ Tutorialbook::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  # DEVISE
+  config.action_mailer.defaul_url_options = {host:'localhost',port:3000}
 end
